@@ -1,0 +1,112 @@
+:root{
+    --color-key: #000000;
+}
+
+/* Header */
+
+.header{
+    height: 50px;
+    width: 100%;
+    outline: 3px solid black;
+}
+
+.vertical-center-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url(./images/logo.png);
+    float: left;
+}
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+}
+.login{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+/* Menu */
+.container{
+    margin-top: 5px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid black;
+}
+
+.vertical-center-container{
+    position: absolute;
+}
+
+.menu-layout{
+    width: 200px;
+    height: 50px;
+}
+
+/* Screen */
+.screen{
+    height:300px;
+    outline: 3px solid black;
+}
+
+/* Piano */
+.piano{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    outline: 3px solid black;
+}
+
+/* Key */
+.key{
+    height: 300px;
+    width: 40px;
+    background-color: white;
+    outline: 3px solid black;
+}
+
+.key.black {
+    position: relative;
+    background-color: black;
+    margin-top: 0;
+    margin-left: -7px;
+    margin-right: -7px;
+    height: 200px;
+    width: 20px;
+    z-index: 2;
+}
+
+.key.pressed{
+    background-color: var(--color-key);
+}
+
+.key-text{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 240px;
+    pointer-events: none;
+}
+
+/* Footer */
+.footer{
+    margin-top: 10px;
+    height: 25px;
+    position: flex;
+    bottom: 0;
+    outline: 3px solid black;
+}
